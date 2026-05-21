@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manojkumar N - Platform & DevOps Engineer. Specialized in AWS, Terraform, Kubernetes, FluxCD, GitOps, CI/CD, and scalable systems.">
-    <meta name="keywords" content="Manojkumar N, Platform Engineer, DevOps Engineer, AWS, Terraform, Kubernetes, FluxCD, GitOps, CI/CD, Chemnitz, Germany">
+    <meta name="description"
+        content="Manojkumar N - Platform & DevOps Engineer. Specialized in AWS, Terraform, Kubernetes, FluxCD, GitOps, CI/CD, and scalable systems.">
+    <meta name="keywords"
+        content="Manojkumar N, Platform Engineer, DevOps Engineer, AWS, Terraform, Kubernetes, FluxCD, GitOps, CI/CD, Chemnitz, Germany">
     <title>Manojkumar N | Platform / DevOps Engineer</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         /* Dev-Native System Variables */
         :root {
-            --bg-base: #08080a;       /* Dark charcoal */
-            --bg-surface: #0d0e12;    /* Blueprint panel */
-            --bg-card: #121318;       /* IDE Terminal base */
-            --border-color: rgba(99, 102, 241, 0.08); /* Indigo-hint grid lines */
+            --bg-base: #08080a;
+            /* Dark charcoal */
+            --bg-surface: #0d0e12;
+            /* Blueprint panel */
+            --bg-card: #121318;
+            /* IDE Terminal base */
+            --border-color: rgba(99, 102, 241, 0.08);
+            /* Indigo-hint grid lines */
             --border-active: rgba(99, 102, 241, 0.25);
             --border-solid: #1f2029;
-            --text-primary: #f8fafc;  /* Slate-50 */
-            --text-secondary: #94a3b8;/* Slate-400 */
-            --text-muted: #475569;    /* Slate-600 */
-            --accent: #6366f1;        /* Indigo-500 */
+            --text-primary: #f8fafc;
+            /* Slate-50 */
+            --text-secondary: #94a3b8;
+            /* Slate-400 */
+            --text-muted: #475569;
+            /* Slate-600 */
+            --accent: #6366f1;
+            /* Indigo-500 */
             --accent-glow: rgba(99, 102, 241, 0.15);
-            --success: #10b981;       /* Emerald-500 */
+            --success: #10b981;
+            /* Emerald-500 */
             --success-glow: rgba(16, 185, 129, 0.1);
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -33,7 +47,9 @@
             --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -55,7 +71,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-image: 
+            background-image:
                 linear-gradient(var(--border-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
             background-size: 40px 40px;
@@ -73,7 +89,8 @@
             position: relative;
         }
 
-        .grid-container::before, .grid-container::after {
+        .grid-container::before,
+        .grid-container::after {
             content: '';
             position: absolute;
             top: 0;
@@ -82,10 +99,15 @@
             background-color: var(--border-color);
             pointer-events: none;
         }
-        
-        .grid-container::before { left: 33%; }
+
+        .grid-container::before {
+            left: 33%;
+        }
+
         @media (max-width: 768px) {
-            .grid-container::before { display: none; }
+            .grid-container::before {
+                display: none;
+            }
         }
 
         /* Section structure partitioned by grid lines */
@@ -110,7 +132,10 @@
         }
 
         /* Typography */
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             color: var(--text-primary);
             font-weight: 700;
             letter-spacing: -0.03em;
@@ -188,7 +213,9 @@
         }
 
         @keyframes cursor-blink {
-            to { visibility: hidden; }
+            to {
+                visibility: hidden;
+            }
         }
 
         .nav-right {
@@ -227,7 +254,9 @@
         }
 
         @media (max-width: 900px) {
-            .hud-panel { display: none; }
+            .hud-panel {
+                display: none;
+            }
         }
 
         .hud-indicator {
@@ -289,9 +318,20 @@
             background-color: var(--border-solid);
         }
 
-        .dot.red { background-color: #ef4444; opacity: 0.4; }
-        .dot.yellow { background-color: #f59e0b; opacity: 0.4; }
-        .dot.green { background-color: #10b981; opacity: 0.4; }
+        .dot.red {
+            background-color: #ef4444;
+            opacity: 0.4;
+        }
+
+        .dot.yellow {
+            background-color: #f59e0b;
+            opacity: 0.4;
+        }
+
+        .dot.green {
+            background-color: #10b981;
+            opacity: 0.4;
+        }
 
         .terminal-tab-name {
             font-size: 0.7rem;
@@ -1099,6 +1139,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- HUD Sticky Navigation Header -->
@@ -1107,7 +1148,7 @@
             <a href="#hero" class="logo" id="logo-nav">
                 <span class="logo-prompt">manojkumar@tu-chemnitz:~$</span><span class="logo-cursor"></span>
             </a>
-            
+
             <div class="nav-right">
                 <!-- Live diagnostic HUD -->
                 <div class="hud-panel">
@@ -1115,7 +1156,7 @@
                     <span class="hud-indicator">OPS: <span class="hud-val">100%</span></span>
                     <span class="hud-indicator">LOC: <span class="hud-val">DE</span></span>
                 </div>
-                
+
                 <nav>
                     <a href="#focus" id="nav-focus">Focus</a>
                     <a href="#experience" id="nav-exp">Pipeline</a>
@@ -1132,7 +1173,7 @@
         <!-- Hero Section inside IDE terminal -->
         <section id="hero" class="hero">
             <div class="section-tag">[00 // terminal_init]</div>
-            
+
             <div class="hero-layout">
                 <div class="terminal-shell">
                     <div class="terminal-header-bar">
@@ -1144,35 +1185,59 @@
                         <div class="terminal-tab-name">platform-engineer.md</div>
                         <div style="width: 32px;"></div>
                     </div>
-                    
+
                     <div class="terminal-body">
                         <div class="terminal-prompt">
                             <span class="terminal-prompt-user">guest@profile</span>:<span>~</span>$ cat intro.txt
                         </div>
-                        
+
                         <h1 class="hero-name" id="main-name">Manojkumar N</h1>
                         <p class="hero-role">&gt; <span class="hero-role-tag">Platform / DevOps Engineer</span></p>
-                        
+
                         <p class="hero-desc" id="main-desc">
-                            I provision production-grade AWS infrastructure with Terraform, automate container distributions using FluxCD GitOps, and build robust developer platforms that accelerate software releases.
+                            I provision production-grade AWS infrastructure with Terraform, automate container
+                            distributions using FluxCD GitOps, and build robust developer platforms that accelerate
+                            software releases.
                         </p>
-                        
+
                         <div class="hero-status-card" id="availability-badge">
                             <span class="pulse-dot"></span>
                             Open to Working Student / Internship / Junior Platform-DevOps opportunities in Germany
                         </div>
-                        
+
                         <div class="cta-group">
-                            <a href="mailto:manojkumarn631@gmail.com?subject=Request%20for%20Resume%20-%20Platform/DevOps%20Engineer" class="btn btn-primary" id="cta-resume">
-                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <a href="mailto:manojkumarn631@gmail.com?subject=Request%20for%20Resume%20-%20Platform/DevOps%20Engineer"
+                                class="btn btn-primary" id="cta-resume">
+                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                    stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
                                 Request Resume
                             </a>
-                            <a href="https://github.com/ManojKumarN001" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="cta-github">
-                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <a href="https://github.com/ManojKumarN001" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary" id="cta-github">
+                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                    stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
                                 GitHub
                             </a>
-                            <a href="https://www.linkedin.com/in/manoj-kumar-n-0a16441b4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="cta-linkedin">
-                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <a href="https://www.linkedin.com/in/manoj-kumar-n-0a16441b4/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-secondary" id="cta-linkedin">
+                                <svg class="icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                    stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
                                 LinkedIn
                             </a>
                         </div>
@@ -1185,17 +1250,23 @@
         <section id="focus">
             <div class="section-tag">[01 // Focus]</div>
             <h2>Current Focus</h2>
-            
+
             <div class="focus-layout">
                 <div class="focus-text">
                     <p>
-                        I am currently based in Chemnitz, Germany, pursuing my <strong>M.Sc. in Computer Science at TU Chemnitz</strong> (2026–Present). With a background of three years as a Platform/DevOps engineer in software enterprises, I pair systems automation theories with hands-on site reliability engineering.
+                        I am currently based in Chemnitz, Germany, pursuing my <strong>M.Sc. in Computer Science at TU
+                            Chemnitz</strong> (2026–Present). With a background of three years as a Platform/DevOps
+                        engineer in software enterprises, I pair systems automation theories with hands-on site
+                        reliability engineering.
                     </p>
                     <p>
-                        My professional interest lies in building robust developer platforms, creating reproducible multi-tenant cloud architectures, and standardizing application delivery using GitOps frameworks. I am actively looking to join a team in Germany where I can solve infrastructure scaling challenges.
+                        My professional interest lies in building robust developer platforms, creating reproducible
+                        multi-tenant cloud architectures, and standardizing application delivery using GitOps
+                        frameworks. I am actively looking to join a team in Germany where I can solve infrastructure
+                        scaling challenges.
                     </p>
                 </div>
-                
+
                 <div class="focus-card" id="focus-info-card">
                     <h3>Environment Meta</h3>
                     <ul class="focus-details-list">
@@ -1224,7 +1295,7 @@
         <section id="impact">
             <div class="section-tag">[02 // Impact]</div>
             <h2>Selected Impact</h2>
-            
+
             <div class="impact-grid">
                 <div class="impact-card" id="metric-experience">
                     <div class="impact-val">3 Yrs</div>
@@ -1249,7 +1320,7 @@
         <section id="stack">
             <div class="section-tag">[03 // STACK]</div>
             <h2>Technical Stack</h2>
-            
+
             <div class="stack-grid">
                 <!-- Cloud -->
                 <div class="stack-card" id="stack-cloud">
@@ -1272,7 +1343,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Containers -->
                 <div class="stack-card" id="stack-containers">
                     <div class="ide-tab-header">
@@ -1298,7 +1369,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- IaC -->
                 <div class="stack-card" id="stack-iac">
                     <div class="ide-tab-header">
@@ -1320,7 +1391,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- CI/CD & GitOps -->
                 <div class="stack-card" id="stack-cicd">
                     <div class="ide-tab-header">
@@ -1346,7 +1417,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Data & Platform -->
                 <div class="stack-card" id="stack-platform">
                     <div class="ide-tab-header">
@@ -1368,7 +1439,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Scripting -->
                 <div class="stack-card" id="stack-scripting">
                     <div class="ide-tab-header">
@@ -1399,90 +1470,117 @@
         <section id="experience">
             <div class="section-tag">[04 // PIPELINE]</div>
             <h2>Pipeline Execution</h2>
-            
+
             <div class="pipeline">
                 <div class="pipeline-item" id="exp-uniphore">
                     <div class="pipeline-header">
                         <div>
                             <span class="pipeline-org">Uniphore Software Systems</span>
-                            <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">
+                            <div
+                                style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">
                                 Platform / DevOps Engineer
                             </div>
                         </div>
                         <div class="pipeline-meta">
-                            <svg class="icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <svg class="icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor"
+                                stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
                             May 2023 – Apr 2026
                         </div>
                     </div>
-                    
+
                     <div class="pipeline-jobs">
+                        <!-- Step 1 -->
                         <!-- Step 1 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
                                 <div class="job-name">Stage: AWS Infrastructure Provisioning</div>
                                 <p class="job-description">
-                                    Engineered modular, production-grade Terraform modules to provision and manage AWS infrastructure (VPC, EKS, EC2, S3, RDS), implementing rigorous security controls, IAM policies, and cost-allocation tagging.
+                                    As part of the founding 13-engineer Platform team, owned the design and
+                                    implementation of production-grade Terraform modules to provision and manage
+                                    AWS infrastructure (VPC, EKS, EC2, S3, EBS, RDS, IAM, Security Groups),
+                                    including security controls, IAM policies, and cost-optimization strategies
+                                    across single-tenant and multi-tenant environments.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Step 2 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
                                 <div class="job-name">Stage: GitOps Environment Bootstrapping</div>
                                 <p class="job-description">
-                                    Automated GitOps-driven EKS cluster bootstrapping using FluxCD, enabling zero-touch configuration management and declarative deployments across multiple environments.
+                                    Designed and implemented GitOps-driven EKS cluster bootstrapping with FluxCD,
+                                    enabling declarative configuration management and consistent deployments
+                                    across development, staging, and production environments while removing
+                                    manual cluster setup.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Step 3 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
-                                <div class="job-name">Stage: Cloud Migration (Pipelines & Artifacts)</div>
+                                <div class="job-name">Stage: On‑Prem to AWS Migration (Jenkins & JFrog)</div>
                                 <p class="job-description">
-                                    Migrated 40+ Jenkins pipelines and associated JFrog artifacts from on-premise infrastructure to AWS, improving pipeline reliability and developer deployment velocity.
+                                    Led the migration of 40+ production Jenkins pipelines and all JFrog Artifactory
+                                    repositories from on‑premises infrastructure to an internal AWS ecosystem,
+                                    improving pipeline reliability and establishing a new organization-wide CI/CD
+                                    standard.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Step 4 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
                                 <div class="job-name">Stage: Live DB Migration (MongoDB Atlas)</div>
                                 <p class="job-description">
-                                    Led the zero-downtime database migration of 15 TB of mission-critical data from self-hosted Bitnami MongoDB instances to MongoDB Atlas, establishing VPC peering, replica sets, and automated backup strategies.
+                                    Acted as organizational POC for MongoDB Atlas and led the end-to-end migration
+                                    of 15 TB of mission-critical data from self-hosted Bitnami MongoDB to MongoDB
+                                    Atlas, including VPC peering, replica set configuration, cluster deployments,
+                                    and backup strategies.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Step 5 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
                                 <div class="job-name">Stage: CI/CD Build Time Optimization</div>
                                 <p class="job-description">
-                                    Optimized UI product CI/CD build and delivery pipelines, refactoring caching mechanisms and transitioning deployment to AWS S3/CloudFront, which reduced build times by 75% (from 25 minutes down to 6 minutes).
+                                    As the dedicated Platform DevOps engineer for the UI Product Engineering team,
+                                    redesigned the end-to-end CI/CD pipeline, refactored caching, and migrated
+                                    deployments from Kubernetes to AWS S3 — reducing build times by 75% (from
+                                    25 minutes down to 6 minutes).
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Step 6 -->
                         <div class="job-node">
                             <div class="job-node-indicator" title="Job Passed"></div>
                             <div class="job-details">
                                 <div class="job-name">Stage: Platform Security Integration (Harbor Registry)</div>
                                 <p class="job-description">
-                                    Configured and deployed a platform-wide Harbor proxy registry with role-based access control (RBAC) and automated vulnerability scanning, enhancing platform-wide container security.
+                                    Co-developed the organization-wide Harbor proxy registry in a 3-engineer team
+                                    under a Senior Principal Engineer, configuring centralized container image
+                                    storage, CI/CD-integrated image pulling, and role-based access control (RBAC)
+                                    to strengthen platform-wide container security.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="pipeline-tech-tags">
                         <span class="tag">AWS</span>
                         <span class="tag">Terraform</span>
@@ -1501,7 +1599,7 @@
         <section id="work">
             <div class="section-tag">[05 // SPECS]</div>
             <h2>Featured Specs</h2>
-            
+
             <div class="cases-grid">
                 <!-- Case Study 1 -->
                 <div class="case-card" id="case-ops">
@@ -1513,15 +1611,18 @@
                     <div class="case-body">
                         <div>
                             <div class="case-block-title">Challenge</div>
-                            <p>Inconsistent manual configuration of environment Kubernetes clusters resulted in environment drift and delayed deployment cycles.</p>
+                            <p>Inconsistent manual configuration of environment Kubernetes clusters resulted in
+                                environment drift and delayed deployment cycles.</p>
                         </div>
                         <div>
                             <div class="case-block-title">Approach</div>
-                            <p>Wrote reusable, modular Terraform modules to provision EKS clusters and bootstrapped them with FluxCD to maintain declarative, git-tracked control over all cluster additions.</p>
+                            <p>Wrote reusable, modular Terraform modules to provision EKS clusters and bootstrapped them
+                                with FluxCD to maintain declarative, git-tracked control over all cluster additions.</p>
                         </div>
                         <div class="case-outcome">
                             <div class="case-block-title">Outcome</div>
-                            <p>Standardized setups and reduced cluster bootstrap time to under <span class="case-metric">15 minutes</span> with zero environment drift.</p>
+                            <p>Standardized setups and reduced cluster bootstrap time to under <span
+                                    class="case-metric">15 minutes</span> with zero environment drift.</p>
                         </div>
                     </div>
                 </div>
@@ -1536,15 +1637,18 @@
                     <div class="case-body">
                         <div>
                             <div class="case-block-title">Challenge</div>
-                            <p>Monolithic UI build pipelines required 25 minutes to build and deploy, creating release bottlenecks and long feedback loops for developers.</p>
+                            <p>Monolithic UI build pipelines required 25 minutes to build and deploy, creating release
+                                bottlenecks and long feedback loops for developers.</p>
                         </div>
                         <div>
                             <div class="case-block-title">Approach</div>
-                            <p>Decoupled application hosting from containerized Kubernetes pods to AWS S3/CloudFront, refactored dependency caching, and optimized parallel build processes in Jenkins.</p>
+                            <p>Decoupled application hosting from containerized Kubernetes pods to AWS S3/CloudFront,
+                                refactored dependency caching, and optimized parallel build processes in Jenkins.</p>
                         </div>
                         <div class="case-outcome">
                             <div class="case-block-title">Outcome</div>
-                            <p>Reduced build and deployment time by <span class="case-metric">75%</span>, dropping the cycle time from 25 to 6 minutes.</p>
+                            <p>Reduced build and deployment time by <span class="case-metric">75%</span>, dropping the
+                                cycle time from 25 to 6 minutes.</p>
                         </div>
                     </div>
                 </div>
@@ -1559,15 +1663,20 @@
                     <div class="case-body">
                         <div>
                             <div class="case-block-title">Challenge</div>
-                            <p>High infrastructure management overhead and variable database performance on self-managed Bitnami MongoDB clusters.</p>
+                            <p>High infrastructure management overhead and variable database performance on self-managed
+                                Bitnami MongoDB clusters.</p>
                         </div>
                         <div>
                             <div class="case-block-title">Approach</div>
-                            <p>Architected a secure live migration pipeline to MongoDB Atlas using AWS Peering, and managed data transfer via online replication tools with continuous sync.</p>
+                            <p>Architected a secure live migration pipeline to MongoDB Atlas using AWS Peering, and
+                                managed data transfer via online replication tools with continuous sync.</p>
                         </div>
                         <div class="case-outcome">
                             <div class="case-block-title">Outcome</div>
-                            <p>Successfully migrated <span class="case-metric">15 TB</span> of production data with <span class="case-metric">zero downtime</span> and eliminated manual database operations.</p>
+                            <p>Successfully migrated <span class="case-metric">15 TB</span> of production data with
+                                <span class="case-metric">zero downtime</span> and eliminated manual database
+                                operations.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1578,18 +1687,23 @@
         <section id="certifications">
             <div class="section-tag">[06 // CERTS]</div>
             <h2>Certifications</h2>
-            
+
             <div class="cert-card" id="cert-aws-csaa">
                 <div class="cert-info">
                     <div class="cert-icon-wrapper">
-                        <svg class="icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        <svg class="icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor"
+                            stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
                     </div>
                     <div>
                         <div class="cert-title">AWS Certified Solutions Architect – Associate</div>
                         <div class="cert-issuer">Amazon Web Services (AWS)</div>
                     </div>
                 </div>
-                <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer" class="cert-badge-link" id="link-cert-aws">
+                <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer"
+                    class="cert-badge-link" id="link-cert-aws">
                     Verify Certification
                 </a>
             </div>
@@ -1598,41 +1712,60 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="section-tag">[07 // CONTACT]</div>
-            
+
             <div class="contact-layout">
                 <div class="contact-info">
                     <h3>Get In Touch</h3>
                     <p>
-                        I am looking to collaborate on cloud infrastructure automation, platform reliability engineering, and GitOps deployments. Feel free to reach out.
+                        I am looking to collaborate on cloud infrastructure automation, platform reliability
+                        engineering, and GitOps deployments. Feel free to reach out.
                     </p>
-                    
+
                     <div class="contact-grid">
                         <!-- Email -->
                         <a href="mailto:manojkumarn631@gmail.com" class="contact-method-card" id="contact-email">
                             <div class="contact-method-icon">
-                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
                             </div>
                             <div>
                                 <div class="contact-method-label">Email</div>
                                 <div class="contact-method-value">manojkumarn631@gmail.com</div>
                             </div>
                         </a>
-                        
+
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/manoj-kumar-n-0a16441b4/" target="_blank" rel="noopener noreferrer" class="contact-method-card" id="contact-linkedin-link">
+                        <a href="https://www.linkedin.com/in/manoj-kumar-n-0a16441b4/" target="_blank"
+                            rel="noopener noreferrer" class="contact-method-card" id="contact-linkedin-link">
                             <div class="contact-method-icon">
-                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
                             </div>
                             <div>
                                 <div class="contact-method-label">LinkedIn</div>
                                 <div class="contact-method-value">manoj-kumar-n-0a16441b4</div>
                             </div>
                         </a>
-                        
+
                         <!-- Location -->
                         <div class="contact-method-card" id="contact-location-card">
                             <div class="contact-method-icon">
-                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
                             </div>
                             <div>
                                 <div class="contact-method-label">Location</div>
@@ -1652,7 +1785,8 @@
                 &copy; 2026 Manojkumar N. Professional Platform / DevOps Portfolio.
             </div>
             <div class="footer-links">
-                <a href="https://github.com/ManojKumarN001/Profile" target="_blank" rel="noopener noreferrer" id="footer-repo-link">
+                <a href="https://github.com/ManojKumarN001/Profile" target="_blank" rel="noopener noreferrer"
+                    id="footer-repo-link">
                     Source Code
                 </a>
             </div>
@@ -1660,4 +1794,5 @@
     </footer>
 
 </body>
+
 </html>
